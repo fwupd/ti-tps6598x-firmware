@@ -25,9 +25,19 @@
     <release version="F907.14.08" date="2022-12-09" urgency="low">
       <checksum filename="TS4-combind-122021-secure-Cus-08.bin" target="content"/>
       <description>
-        <p>This stable release fixes the following bug:</p>
+        <p>This stable release fixes the following bugs:</p>
         <ul>
-          <li>Fix PD foobarbaz</li>
+          <li>False OCP triggered when transition from high current to low current under 100% load conitions.</li>
+          <li>Firmware OCP does not perform as expected.</li>
+          <li>Port ignoring unrecognized message instead of sending REJECT message in PD2 mode.</li>
+          <li>Port sends "Not_Supported" instead of Reject for DR_SWAP to UFP request in PD3 mode.</li>
+          <li>Port not responding with NAK when tester sends invalid Discover Identity request message with SVID-0xEEEE in PD2 mode.</li>
+          <li>Port not responding with NAK when tester sends valid Discover Identity request in PD2 mode.</li>
+          <li>Port was not a Vconn Source provider when talking to cable in PD2 mode.</li>
+          <li>Extended message header size was not 25 bytes which is mandated by PD Spec Rev3.1 v 1.1.</li>
+          <li>Error recovery details read from register 0x40 always returns 0 for bits 22-27 when EC receives power event occurred interrupt from register 0x14.</li>
+          <li>Port does not assert Billboard event when AM entry fails.</li>
+          <li>Incorrect number of VDOs sent for Discover Identity Message when in UFP Role.</li>
         </ul>
       </description>
     </release>

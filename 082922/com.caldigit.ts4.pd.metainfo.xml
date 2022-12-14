@@ -25,9 +25,13 @@
     <release version="F907.14.11" date="2022-12-09" urgency="low">
       <checksum filename="TS4-combind-082922-secure-Cus-33.bin" target="content"/>
       <description>
-        <p>This stable release fixes the following bug:</p>
+        <p>This stable release fixes the following bugs:</p>
         <ul>
-          <li>Fix PD foobarbaz</li>
+          <li>Port fail to come up as legacy sink.</li>
+          <li>Port send discover SVID after receiving NACK for discover identity message.</li>
+          <li>Port A switch was closed when both ports advertise same power when multi port sink policy was enabled.</li>
+          <li>Port fails to return VID = 0xFFFF for invalid battery reference in Get_Manufacture_Info message.</li>
+          <li>Port fail to send soft reset after receiving a PD message from far-end during tVconnStabletime.</li>
         </ul>
       </description>
     </release>

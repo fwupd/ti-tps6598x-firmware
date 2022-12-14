@@ -25,9 +25,15 @@
     <release version="F907.14.10" date="2022-12-09" urgency="low">
       <checksum filename="TS4-combind-050322-secure-Cus-22.bin" target="content"/>
       <description>
-        <p>This stable release fixes the following bug:</p>
+        <p>This stable release fixes the following bugs:</p>
         <ul>
-          <li>Fix PD foobarbaz</li>
+          <li>Data Size on header fixed as 26 for Manufacturing Info</li>
+          <li>Port sending hard reset twice (back to back) for an expected hard reset condition</li>
+          <li>Dynamic/Virtual Configuration Not Working for TxSourceCaps Register</li>
+          <li>DFP Port initiates an unexpected VconnSwap</li>
+          <li>Port does not process HPD signals</li>
+          <li>OCP timer enabled during a disconnect event</li>
+          <li>Port unresponsive with Try.Src configuration during a disconnect</li>
         </ul>
       </description>
     </release>
