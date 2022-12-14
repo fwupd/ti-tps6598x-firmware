@@ -1,13 +1,10 @@
 # Copyright (C) 2022 Richard Hughes <richard@hughsie.com>
 
-VENDOR=caldigit
-PROJECT_NAME=ts4
-VERSION=050322
-OBJECTS=						\
-	TS4-combind-050322-secure-Cus-22.bin		\
-	com.caldigit.ts4.pd.metainfo.xml
+VENDOR=CalDigit
+VERSION=TS4-combind-050322-secure-Cus-22
+OBJECTS=$(VERSION).bin com.caldigit.ts4.pd.metainfo.xml
 
-all: $(VENDOR)-$(PROJECT_NAME)-$(VERSION).cab
+all: $(VENDOR)-$(VERSION).cab
 
 clean:
 	rm *.cab

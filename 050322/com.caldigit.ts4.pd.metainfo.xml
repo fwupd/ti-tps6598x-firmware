@@ -5,7 +5,7 @@
   <name_variant_suffix>PD</name_variant_suffix>
   <summary>TS4 Firmware</summary>
   <description>
-    <p>Updated TS4 PD firmware.</p>
+    <p>Updating the firmware on your TS4 dock improves performance and fixes bugs.</p>
   </description>
   <provides>
     <!-- USB\VID_2188&PID_5988&PD_00 -->
@@ -27,13 +27,9 @@
       <description>
         <p>This stable release fixes the following bugs:</p>
         <ul>
-          <li>Data Size on header fixed as 26 for Manufacturing Info</li>
-          <li>Port sending hard reset twice (back to back) for an expected hard reset condition</li>
-          <li>Dynamic/Virtual Configuration Not Working for TxSourceCaps Register</li>
-          <li>DFP Port initiates an unexpected VconnSwap</li>
-          <li>Port does not process HPD signals</li>
-          <li>OCP timer enabled during a disconnect event</li>
-          <li>Port unresponsive with Try.Src configuration during a disconnect</li>
+          <li>Enable the OCP timer during a disconnect event</li>
+          <li>Fix the port reset for an expected hard reset condition</li>
+          <li>Fix the port when not processing HPD signals</li>
         </ul>
       </description>
     </release>

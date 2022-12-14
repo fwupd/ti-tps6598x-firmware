@@ -5,7 +5,7 @@
   <name_variant_suffix>PD</name_variant_suffix>
   <summary>TS4 Firmware</summary>
   <description>
-    <p>Updated TS4 PD firmware.</p>
+    <p>Updating the firmware on your TS4 dock improves performance and fixes bugs.</p>
   </description>
   <provides>
     <!-- USB\VID_2188&PID_5988&PD_00 -->
@@ -27,11 +27,9 @@
       <description>
         <p>This stable release fixes the following bugs:</p>
         <ul>
-          <li>Port fail to come up as legacy sink.</li>
-          <li>Port send discover SVID after receiving NACK for discover identity message.</li>
-          <li>Port A switch was closed when both ports advertise same power when multi port sink policy was enabled.</li>
-          <li>Port fails to return VID = 0xFFFF for invalid battery reference in Get_Manufacture_Info message.</li>
-          <li>Port fail to send soft reset after receiving a PD message from far-end during tVconnStabletime.</li>
+          <li>Fix a failure to soft reset after receiving a PD message</li>
+          <li>Fix the port when the multi port sink policy was enabled</li>
+          <li>Fix the port failure to come up as legacy sink</li>
         </ul>
       </description>
     </release>
