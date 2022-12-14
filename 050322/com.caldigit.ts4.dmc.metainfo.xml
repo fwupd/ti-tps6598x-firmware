@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- use com.caldigit.ts4.pd.firmware update if the hardware reports USB\VID_0451&PID_ACE1 -->
+<component type="firmware">
+  <id>com.caldigit.ts4.dmc.firmware</id>
+  <name>TS4</name>
+  <name_variant_suffix>DMC</name_variant_suffix>
+  <summary>TS4 Firmware</summary>
+  <description>
+    <p>Updated TS4 DMC firmware.</p>
+  </description>
+  <provides>
+    <!-- USB\VID_0451&PID_ACE1&CONFIG_798030000000000030000000 -->
+    <firmware type="flashed">34e1ba21-2b73-5b20-a59a-ff5eb34af3ec</firmware>
+  </provides>
+  <url type="homepage">https://www.caldigit.com/thunderbolt-station-4/</url>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary</project_license>
+  <categories>
+    <category>X-Device</category>
+  </categories>
+  <custom>
+    <value key="LVFS::VersionFormat">triplet</value>
+    <value key="LVFS::UpdateProtocol">com.ti.tps6598x</value>
+  </custom>
+  <releases>
+    <release version="1.50.8" date="2022-12-09" urgency="low">
+      <checksum filename="TS4-combind-050322-secure-Cus-22.bin" target="content"/>
+      <description>
+        <p>This stable release fixes the following bugs:</p>
+        <ul>
+          <li>No Display on the Daisy Chain connection of Monitors that are connected on DFP Ports.</li>
+          <li>Increased the wait time when DMC sends System Reset to PD Controllers.</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+</component>
