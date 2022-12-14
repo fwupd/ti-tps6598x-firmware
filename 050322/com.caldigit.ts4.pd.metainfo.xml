@@ -8,8 +8,8 @@
     <p>Updated TS4 PD firmware.</p>
   </description>
   <provides>
-    <!-- USB\VID_0451&PID_ACE1&PD_00&CONFIG_00000000A206000030000000 -->
-    <firmware type="flashed">47e3e649-c202-5c8c-ac39-7ed8b30488ec</firmware>
+    <!-- USB\VID_2188&PID_5988&PD_00 -->
+    <firmware type="flashed">707d7941-3129-53d9-a205-47a659d94fe3</firmware>
   </provides>
   <url type="homepage">https://www.caldigit.com/thunderbolt-station-4/</url>
   <metadata_license>CC0-1.0</metadata_license>
@@ -38,16 +38,8 @@
       </description>
     </release>
   </releases>
-  <!-- many requirements on the DMC parent because all the OEMs use the same DMC VID & PID -->
   <requires>
-    <!-- USB\VID_0451&PID_ACE1&UID_50bf5616c608a6b98b4169b220d9a5b8 -->
-    <firmware depth="1">77cbd112-7b0a-52aa-a5f5-46015d297603</firmware>
-    <!-- USB\VID_0451&PID_ACE1&CONFIG_198030000000000030000000 or
-         USB\VID_0451&PID_ACE1&CONFIG_798030000000000030000000 -->
-    <firmware depth="1">62dc749f-5594-54e6-940d-9c15463e9c02|34e1ba21-2b73-5b20-a59a-ff5eb34af3ec</firmware>
-    <!-- USB\VID_0451&PID_ACE1&OUID_0800000000000000 or
-         USB\VID_0451&PID_ACE1&OUID_2200000000000000 or
-         USB\VID_0451&PID_ACE1&OUID_3300000000000000 -->
-    <firmware depth="1">39cd2d79-f119-5e2b-ba57-0b101df5bebc|3cb40b04-ca8a-5085-adbe-866bca6bebe4|33c68fc5-fd3d-5cc8-951b-319368dfd6e8</firmware>
+    <!-- USB\VID_0451&PID_ACE1 -->
+    <firmware depth="1">8449819e-0b1f-5b19-857b-35c4289fe754</firmware>
   </requires>
 </component>
